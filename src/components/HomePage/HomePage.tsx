@@ -8,11 +8,7 @@ interface HomePageProps {
   componentsCountByCategory: Record<string, number>;
 }
 
-export function HomePage({ componentsCountByCategory }: HomePageProps) {
-  const allComponentsCount = Object.keys(componentsCountByCategory).reduce(
-    (acc, category) => acc + componentsCountByCategory[category],
-    0
-  );
+export function HomePage() {
 
   return (
     <>
@@ -21,7 +17,6 @@ export function HomePage({ componentsCountByCategory }: HomePageProps) {
       </Head>
       <Banner />
       <div id="main">
-        {/* <CategoriesList groups={CATEGORIES} componentsCountByCategory={componentsCountByCategory} /> */}
       </div>
       <div id="explore">
         <HeroImageRight />
