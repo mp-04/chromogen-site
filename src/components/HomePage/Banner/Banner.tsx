@@ -1,5 +1,5 @@
 import React from 'react';
-import { MarkGithubIcon, LinkExternalIcon } from '@primer/octicons-react';
+import { MarkGithubIcon } from '@primer/octicons-react';
 import {
   Title,
   Overlay,
@@ -15,11 +15,7 @@ import { useWindowScroll } from '@mantine/hooks';
 import data from './data';
 import useStyles from './Banner.styles';
 
-interface BannerProps {
-  componentsCount: number;
-}
-
-export function Banner({ componentsCount }: BannerProps) {
+export function Banner() {
   const { classes, cx } = useStyles();
   const [, scrollTo] = useWindowScroll();
   const theme = useMantineTheme();
@@ -50,16 +46,16 @@ export function Banner({ componentsCount }: BannerProps) {
         />
 
         <div className={classes.body}>
-          <Text className={classes.supTitle}>Mantine UI</Text>
+          <Text className={classes.supTitle}>Chromogen</Text>
           <Title className={classes.title}>
-            <span className={classes.highlight}>{componentsCount} responsive components</span>
-            <br /> built with Mantine
+            <span className={classes.highlight}>UI-driven test generation</span>
+            <br /> for Recoil & React Hooks
           </Title>
 
           <Text className={classes.description}>
-            Build your next website even faster with premade responsive components designed and
-            built by Mantine maintainers and community. All components are free forever for
-            everyone.
+          A Jest unit-test generation tool for applications built with Recoil.js
+          and React Hooks. Capture your application's state changes during your
+          interaction and auto-generate corresponding test suites.
           </Text>
 
           <Group className={classes.controls}>
@@ -67,23 +63,16 @@ export function Banner({ componentsCount }: BannerProps) {
               className={cx(classes.control, classes.controlMain)}
               onClick={() => scrollTo({ y: 700 })}
             >
-              Explore everything
+              Explore more
             </Button>
             <Button
               className={cx(classes.control, classes.controlSecondary)}
               leftIcon={<MarkGithubIcon />}
               component="a"
-              href="https://github.com/mantinedev/ui.mantine.dev"
+              href="https://github.com/oslabs-beta/Chromogen"
+              target="_blank"
             >
               GitHub
-            </Button>
-            <Button
-              className={cx(classes.control, classes.controlSecondary)}
-              rightIcon={<LinkExternalIcon />}
-              component="a"
-              href="https://mantine.dev/getting-started/"
-            >
-              Get started with Mantine
             </Button>
           </Group>
 

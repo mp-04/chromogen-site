@@ -9,7 +9,9 @@ export function SourceCode({ className, ...others }: React.ComponentProps<'a'>) 
   return (
     <a
       className={cx(classes.wrapper, className)}
-      href="https://github.com/mantinedev/mantine"
+      href="https://github.com/oslabs-beta/Chromogen"
+      target="_blank"
+      rel="noreferrer"
       {...others}
     >
       <Text size="sm">Source code</Text>

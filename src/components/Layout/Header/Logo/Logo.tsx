@@ -9,7 +9,7 @@ export function Logo({ className, ...others }: any) {
   return (
     <div className={classes.wrapper}>
       <Link href="/" {...others}>
-        <a href="/" className={cx(classes.logo, className)} aria-label="Mantine">
+        <a href="/" className={cx(classes.logo, className)} aria-label="Chromogen">
           <LogoImage className={classes.image} />
         </a>
       </Link>

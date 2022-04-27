@@ -1,5 +1,5 @@
 import { createStyles } from '@mantine/core';
-import banner from './banner.webp';
+import banner from './chromogen-logo.webp';
 
 export default createStyles((theme) => ({
   wrapper: {
