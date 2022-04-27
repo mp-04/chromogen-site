@@ -97,8 +97,9 @@ export function HeroImageRight() {
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Build fully functional accessible web applications with ease – Mantine includes more
-              than 100 customizable components and hooks to cover you in any situation
+              A Jest unit-test generation tool for applications built with Recoil.js
+              and React Hooks. Capture your application's state changes during your
+              interaction and auto-generate corresponding test suites.
             </Text>
 
             <Button

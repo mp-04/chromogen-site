@@ -1,24 +1,24 @@
-import { LawIcon, SunIcon, FlameIcon } from '@primer/octicons-react';
+import { CodeSquareIcon, ShareAndroidIcon, RocketIcon } from '@primer/octicons-react';
 
 export default [
   {
-    icon: FlameIcon,
-    title: 'Flexible',
+    icon: RocketIcon,
+    title: 'Chrome Devtool',
     description:
-      'All components are built with Mantine theme, change colors, fonts, shadows and other properties.',
+      'Chromogen is also available as a Chrome extension to offer additional tools for a more meaningful debugging experience.',
   },
 
   {
-    icon: SunIcon,
-    title: 'Light and dark theme',
+    icon: ShareAndroidIcon,
+    title: 'State Visualizer',
     description:
-      'Most components support both dark and light color schemes by default, no additional modifications needed.',
+      'The Chromogen Dev-tool leverages D3 to render a dynamic visualization of an application\'s state tree.',
   },
 
   {
-    icon: LawIcon,
-    title: 'Free for everyone',
+    icon: CodeSquareIcon,
+    title: 'Export Tests',
     description:
-      'Free, open source, community-driven, MIT license. Use anywhere, including commercial projects.',
+      'Export your auto-generated Jest-unit tests to run in your IDE.',
   },
 ];

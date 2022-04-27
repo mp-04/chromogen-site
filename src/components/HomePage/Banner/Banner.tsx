@@ -53,9 +53,9 @@ export function Banner() {
           </Title>
 
           <Text className={classes.description}>
-          A Jest unit-test generation tool for applications built with Recoil.js
-          and React Hooks. Capture your application's state changes during your
-          interaction and auto-generate corresponding test suites.
+            A one-stop shop for front-end debugging.
+            Chromogen offers multiple tools that support debugging
+            react-hooks and recoil applications.
           </Text>
 
           <Group className={classes.controls}>
@@ -69,7 +69,7 @@ export function Banner() {
               className={cx(classes.control, classes.controlSecondary)}
               leftIcon={<MarkGithubIcon />}
               component="a"
-              href="https://github.com/oslabs-beta/Chromogen"
+              href="https://github.com/open-source-labs/Chromogen/"
               target="_blank"
             >
               GitHub

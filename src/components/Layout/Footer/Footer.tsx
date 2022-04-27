@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStyles, Container, Group, ActionIcon } from '@mantine/core';
-import { BrandTwitter, BrandYoutube, BrandInstagram } from 'tabler-icons-react';
+import { BrandLinkedin, BrandGithub } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -35,17 +35,25 @@ export function Footer() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        {/* <MantineLogo /> */}
-        Chromogen &#169; 2022
+        chromogen &#169; 2022
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <ActionIcon size="lg">
-            <BrandTwitter size={18} />
+            <a
+              href="https://www.linkedin.com/company/chromogen/"
+              target="_blank"
+              rel="noreferrer"
+            >
+            <BrandLinkedin size={18} />
+            </a>
           </ActionIcon>
           <ActionIcon size="lg">
-            <BrandYoutube size={18} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <BrandInstagram size={18} />
+            <a
+              href="https://github.com/open-source-labs/Chromogen"
+              target="_blank"
+              rel="noreferrer"
+            >
+            <BrandGithub size={18} />
+            </a>
           </ActionIcon>
         </Group>
       </Container>

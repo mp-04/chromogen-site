@@ -33,7 +33,7 @@ export function UserInfoIcons({ avatar, name, linkedIn, gitHub }: UserInfoIconsP
 
           <Group noWrap spacing={10} mt={3}>
             <BrandGithub size={16} className={classes.icon} />
-            <Text<'a'> component="a" size="xs" color="dimmed" href={gitHub} target="_blank">
+            <Text<'a'> component="a" size="xs" color="dimmed" href={`https://${gitHub}`} target="_blank">
               {gitHub}
               {/* {email} */}
             </Text>
@@ -42,7 +42,7 @@ export function UserInfoIcons({ avatar, name, linkedIn, gitHub }: UserInfoIconsP
           <Group noWrap spacing={10} mt={5}>
             {/* <PhoneCall size={16} className={classes.icon} /> */}
             <BrandLinkedin size={16} className={classes.icon}/>
-            <Text<'a'> component="a" size="xs" color="dimmed" href={linkedIn} target="_blank">
+            <Text<'a'> component="a" size="xs" color="dimmed" href={`https://${linkedIn}`} target="_blank">
               {linkedIn}
             </Text>
           </Group>

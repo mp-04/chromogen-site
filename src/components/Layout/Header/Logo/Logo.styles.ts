@@ -28,4 +28,8 @@ export default createStyles((theme) => ({
     textDecoration: 'none',
     marginLeft: theme.spacing.md,
   },
+
+  logoImageTitle: {
+    fontFamily: 'Greycliff CF',
+  },
 }));

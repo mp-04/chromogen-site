@@ -2,7 +2,7 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Layout } from '../components/Layout/Layout';
-import favicon from '../public/favicon.svg';
+import favicon from '../public/chromogen-logo.png';
 import '../fonts/GreycliffCF/styles.css';
 
 export default function App(props: AppProps) {
